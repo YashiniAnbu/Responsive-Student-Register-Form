@@ -6,109 +6,87 @@
 <title>Student Form</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="container">
+      <h2>Student Registration Form</h2>
+   <form id="studentForm">
+     <div class="form-row">
 
-<div class="container">
+    <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" required>
+    </div>
 
-<h2>Student Registration Form</h2>
+    <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required>
+    </div>
+   </div>
 
-<!-- ===== FORM SECTION ===== -->
-<form id="studentForm">
-
-<div class="form-row">
-
-<div class="form-group">
-<label for="firstName">First Name</label>
-<input type="text" id="firstName" required>
-</div>
-
-<div class="form-group">
-<label for="lastName">Last Name</label>
-<input type="text" id="lastName" required>
-</div>
-
-</div>
-
-
-<div class="form-group">
-<label for="email">Email</label>
-<input type="email" id="email" required>
-</div>
+    <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+    </div>
 
 
-<div class="form-group">
-<label for="address">Address</label>
-<textarea id="address" required></textarea>
-</div>
+    <div class="form-group">
+    <label for="address">Address</label>
+    <textarea id="address" required></textarea>
+    </div>
 
 
-<div class="form-row">
+    <div class="form-row">
 
-<div class="form-group">
-<label for="pincode">Pincode</label>
-<input type="number" id="pincode" required>
-</div>
+    <div class="form-group">
+    <label for="pincode">Pincode</label>
+    <input type="number" id="pincode" required>
+    </div>
 
-<div class="form-group">
-<label>Gender</label>
-<div class="radio-group">
-<label><input type="radio" name="gender" value="Male" required> Male</label>
-<label><input type="radio" name="gender" value="Female" required> Female</label>
-</div>
-</div>
+    <div class="form-group">
+    <label>Gender</label>
+    <div class="radio-group">
+    <label><input type="radio" name="gender" value="Male" required> Male</label>
+    <label><input type="radio" name="gender" value="Female" required> Female</label>
+    </div>
+    </div>
 
-</div>
+   </div>
+    <div class="form-row">
+    <div class="form-group">
+    <label for="state">State</label>
+    <input type="text" id="state" required>
+    </div>
 
+    <div class="form-group">
+    <label for="country">Country</label>
+    <input type="text" id="country" required>
+    </div>
 
-<div class="form-row">
+    </div>
+      <button type="submit">Submit</button>
+    </form>
 
-<div class="form-group">
-<label for="state">State</label>
-<input type="text" id="state" required>
-</div>
+    <div class="table-container">
+    <table id="dataTable">
+  <thead>
 
-<div class="form-group">
-<label for="country">Country</label>
-<input type="text" id="country" required>
-</div>
-
-</div>
-
-<button type="submit">Submit</button>
-
-</form>
-
-
-<!-- ===== TABLE SECTION ===== -->
-
-<div class="table-container">
-
-<table id="dataTable">
-
-<thead>
-
-<tr>
-<th>First Name</th>
-<th>Last Name</th>
-<th>Email</th>
-<th>Address</th>
-<th>Pincode</th>
-<th>Gender</th>
-<th>State</th>
-<th>Country</th>
-</tr>
+    <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Pincode</th>
+    <th>Gender</th>
+    <th>State</th>
+    <th>Country</th>
+    </tr>
 
 </thead>
+  <tbody>
+   </tbody>
 
-<tbody>
-<!-- Dynamic rows appear here -->
-</tbody>
-
-</table>
-
-</div>
-
+   </table>
+  </div>
 </div>
 
 <script src="script.js"></script>
